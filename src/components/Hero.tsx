@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { profile } from "@/data/site";
 
 export default function Hero() {
@@ -7,6 +8,14 @@ export default function Hero() {
       className="marble-surface relative overflow-hidden px-6 py-28 sm:py-36"
     >
       <div className="mx-auto flex max-w-5xl flex-col items-start gap-6">
+        <Image
+          src="/images/profile.jpg"
+          alt={profile.name}
+          width={128}
+          height={128}
+          priority
+          className="h-32 w-32 rounded-full border-4 border-white/80 object-cover shadow-md"
+        />
         <span className="rounded-full bg-white/70 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-ink-soft">
           {profile.location}
         </span>
