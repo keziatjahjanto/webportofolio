@@ -61,7 +61,7 @@ export const projects: Project[] = [
   {
     title: "Publications",
     description:
-      "Essays and reflections on faith, mental health, and justice, written for Buletin Pillar and CRCNA's Do Justice series.",
+      "Essays, campaign content, and event materials on faith, mental health, and justice, created for Buletin Pillar, CRCNA's Do Justice series, FICA Campus Ministry, Calvin University's Psychology Club, and Hope Special Needs Center.",
     tags: ["Publication", "Writing"],
     slug: "publications",
     accent: "baby-purple",
@@ -87,6 +87,28 @@ export const projects: Project[] = [
         title: "International Students Speak",
         company: "CRCNA — Do Justice Series",
         href: "https://www.crcna.org/DoJustice/article/kezia-tjahjanto",
+      },
+      {
+        src: "/images/publications/soul-filled-vessels-or-mindful-bodies.png",
+        title: "Soul-filled Vessels or Mindful Bodies?",
+        company: "Psychology Club & ScARF, Calvin University",
+        date: "11 April 2022",
+      },
+      {
+        src: "/images/publications/koinonia-living-out-your-calling.png",
+        title: "Koinonia: Living Out Your Calling",
+        company: "FICA Campus Ministry",
+        date: "18–19 December 2021",
+      },
+      {
+        src: "/images/publications/koinonia-logo.png",
+        title: "Koinonia",
+        company: "FICA Campus Ministry",
+      },
+      {
+        src: "/images/publications/gangguan-kecemasan-part-2.png",
+        title: "Gangguan Kecemasan (Part 2): Panik & Fobia",
+        company: "Hope Special Needs Center",
       },
     ],
   },
