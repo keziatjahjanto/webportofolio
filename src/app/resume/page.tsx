@@ -6,7 +6,7 @@ export default function ResumePage() {
     <main className="marble-surface min-h-screen px-6 py-16 sm:py-24">
       <div className="mx-auto max-w-5xl">
         <Link
-          href="/#experience"
+          href="/#top"
           className="text-sm font-medium text-ink-soft transition-colors hover:text-ink"
         >
           ← Back
