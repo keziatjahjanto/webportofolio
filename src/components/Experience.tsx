@@ -1,13 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  certifications,
-  education,
-  experience,
-  leadership,
-  skills,
-} from "@/data/site";
+import { certifications, education, experience, leadership } from "@/data/site";
 
 type TimelineItem = {
   role: string;
@@ -118,20 +112,6 @@ export default function Experience() {
           {activeTab === "experience" && <Timeline items={experience} />}
           {activeTab === "leadership" && <Timeline items={leadership} />}
           {activeTab === "education" && <EducationAndCertifications />}
-        </div>
-
-        <div className="mt-16">
-          <h3 className="font-display text-xl text-ink">Skills</h3>
-          <div className="mt-4 flex flex-wrap gap-3">
-            {skills.map((skill) => (
-              <span
-                key={skill}
-                className="rounded-full bg-white/70 px-4 py-2 text-sm text-ink-soft shadow-sm"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>

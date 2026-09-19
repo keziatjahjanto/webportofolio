@@ -40,10 +40,9 @@ export const projects = [
     accent: "baby-blue",
   },
   {
-    title: "Cimol Bledos Franchise Model",
-    description:
-      "Investigated local F&B market dynamics to establish the first mobile 'Cimol Bledos' franchise in Jakarta, structuring vendor agreements and cost-control protocols that held ~75% of projected revenue through macroeconomic instability.",
-    tags: ["Business Strategy", "Operations"],
+    title: "Publications",
+    description: "More details coming soon.",
+    tags: ["Publication"],
     href: "#",
     accent: "baby-purple",
   },
@@ -68,7 +67,7 @@ export const experience = [
   {
     role: "Founder and Tutor",
     org: "Voice Beyond",
-    period: "July 2026 — Present",
+    period: "July 2026 — Present · Jakarta, Indonesia",
     description:
       "Founded and manage an independent online English and IELTS tutoring business, overseeing curriculum development, pricing strategy, and student learning pathways. Lead branding, marketing, and client relationship management to support business growth.",
   },
@@ -87,16 +86,9 @@ export const experience = [
       "Facilitate group health and wellness coaching programs and guide individual participants in establishing personalized lifestyle goals, using routine follow-ups and data tracking for long-term behavioral maintenance.",
   },
   {
-    role: "Mental Health Specialist",
-    org: "Social Connect Indonesia",
-    period: "2023 — 2024 · Jakarta, Indonesia",
-    description:
-      "Developed community-focused psychoeducational materials and mental health advocacy campaigns, and evaluated community wellbeing program outcomes with cross-functional mental health advocates.",
-  },
-  {
     role: "Nurse Technician",
     org: "Helen DeVos Children's Hospital",
-    period: "December 2022 — April 2023 · Michigan, United States",
+    period: "December 2021 — April 2022 · Michigan, United States",
     description:
       "Delivered clinical nursing support under RN supervision across the Pediatric Emergency Department, NICU, Oncology, and COVID-19 wards, managing vital sign assessments and patient charting in high-acuity environments.",
   },
@@ -123,6 +115,13 @@ export const leadership = [
     period: "2025 · United Kingdom",
     description:
       "Directed event operations for a large-scale Indonesian student community across athletic and cultural events.",
+  },
+  {
+    role: "Mental Health Specialist",
+    org: "Social Connect Indonesia",
+    period: "2023 — 2024 · Jakarta, Indonesia",
+    description:
+      "Developed community-focused psychoeducational materials and mental health advocacy campaigns, and evaluated community wellbeing program outcomes with cross-functional mental health advocates.",
   },
   {
     role: "Director of Campus Ministry",
@@ -158,15 +157,3 @@ export const certifications = [
     year: "2026",
   },
 ] as const;
-
-export const skills = [
-  "Crisis & Emergency Management",
-  "Applied Research",
-  "Mental Health Support",
-  "Lifestyle Coaching",
-  "Clinical & Patient Care",
-  "Community Leadership",
-  "Ministry & Pastoral Care",
-  "Business Strategy & Operations",
-  "Logistics & Event Management",
-];
