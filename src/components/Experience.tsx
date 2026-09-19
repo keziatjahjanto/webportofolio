@@ -12,9 +12,11 @@ export default function Experience() {
           {experience.map((item) => (
             <div key={`${item.role}-${item.org}`} className="relative">
               <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-baby-purple-deep" />
-              <p className="text-xs font-medium uppercase tracking-wide text-ink-soft">
-                {item.period}
-              </p>
+              {item.period && (
+                <p className="text-xs font-medium uppercase tracking-wide text-ink-soft">
+                  {item.period}
+                </p>
+              )}
               <h3 className="mt-1 font-display text-lg text-ink">
                 {item.role} · {item.org}
               </h3>

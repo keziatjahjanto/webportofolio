@@ -19,7 +19,8 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Kezia Tjahjanto — Portfolio",
-  description: "Portfolio of Kezia Tjahjanto",
+  description:
+    "Kezia Tjahjanto — exploring crisis management, resilience, psychology, faith, technology, and community.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
