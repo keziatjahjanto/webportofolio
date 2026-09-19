@@ -34,6 +34,9 @@ export type ProjectGalleryItem = {
   src: string;
   title: string;
   company: string;
+  date?: string;
+  readTime?: string;
+  href?: string;
 };
 
 export type Project = {
@@ -57,10 +60,35 @@ export const projects: Project[] = [
   },
   {
     title: "Publications",
-    description: "More details coming soon.",
-    tags: ["Publication"],
-    href: "#",
+    description:
+      "Essays and reflections on faith, mental health, and justice, written for Buletin Pillar and CRCNA's Do Justice series.",
+    tags: ["Publication", "Writing"],
+    slug: "publications",
     accent: "baby-purple",
+    gallery: [
+      {
+        src: "/images/publications/abortion-where-should-i-stand.png",
+        title: "Abortion: Where Should I Stand?",
+        company: "Buletin Pillar",
+        date: "28 July 2023",
+        readTime: "14 min read",
+        href: "https://www.buletinpillar.org/3p/abortion-where-should-i-stand",
+      },
+      {
+        src: "/images/publications/if-i-am-an-addict.png",
+        title: "If I Am an Addict, Am I Still a Child of God?",
+        company: "Buletin Pillar",
+        date: "28 February 2025",
+        readTime: "10 min read",
+        href: "https://www.buletinpillar.org/kehidupan-kristen/if-i-am-an-addict-am-i-still-a-child-of-god",
+      },
+      {
+        src: "/images/publications/international-students-speak.png",
+        title: "International Students Speak",
+        company: "CRCNA — Do Justice Series",
+        href: "https://www.crcna.org/DoJustice/article/kezia-tjahjanto",
+      },
+    ],
   },
   {
     title: "Community Mental Health Advocacy",

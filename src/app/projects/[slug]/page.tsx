@@ -1,12 +1,55 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { projects } from "@/data/site";
+import { projects, type ProjectGalleryItem } from "@/data/site";
 
 export function generateStaticParams() {
   return projects
     .filter((project) => project.slug)
     .map((project) => ({ slug: project.slug as string }));
+}
+
+function GalleryCard({ item }: { item: ProjectGalleryItem }) {
+  const content = (
+    <>
+      <div className="relative aspect-square w-full bg-white">
+        <Image
+          src={item.src}
+          alt={item.title}
+          fill
+          className="object-contain"
+          sizes="(min-width: 640px) 50vw, 100vw"
+        />
+      </div>
+      <div className="p-5">
+        <p className="font-display text-lg text-ink">{item.title}</p>
+        <p className="mt-1 text-sm text-ink-soft">{item.company}</p>
+        {(item.date || item.readTime) && (
+          <p className="mt-1 text-xs uppercase tracking-wide text-ink-soft/70">
+            {[item.date, item.readTime].filter(Boolean).join(" · ")}
+          </p>
+        )}
+      </div>
+    </>
+  );
+
+  const className =
+    "block overflow-hidden rounded-3xl bg-white/70 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md";
+
+  if (item.href) {
+    return (
+      <a
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return <div className={className}>{content}</div>;
 }
 
 export default async function ProjectDetailPage({
@@ -37,26 +80,7 @@ export default async function ProjectDetailPage({
         {project.gallery && project.gallery.length > 0 && (
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {project.gallery.map((item) => (
-              <div
-                key={item.src}
-                className="overflow-hidden rounded-3xl bg-white/70 shadow-sm"
-              >
-                <div className="relative aspect-square w-full bg-white">
-                  <Image
-                    src={item.src}
-                    alt={item.title}
-                    fill
-                    className="object-contain"
-                    sizes="(min-width: 640px) 50vw, 100vw"
-                  />
-                </div>
-                <div className="p-5">
-                  <p className="font-display text-lg text-ink">
-                    {item.title}
-                  </p>
-                  <p className="mt-1 text-sm text-ink-soft">{item.company}</p>
-                </div>
-              </div>
+              <GalleryCard key={item.src} item={item} />
             ))}
           </div>
         )}
