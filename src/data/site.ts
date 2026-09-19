@@ -3,7 +3,7 @@ export const profile = {
   title: "Crisis Resilience Researcher & Community Builder",
   tagline:
     "Exploring the intersection of crisis management, resilience, psychology, faith, technology, and community — turning emerging ideas into human-centered solutions.",
-  location: "Indonesia",
+  location: "Jakarta, Indonesia",
   email: "kezauralyaa@gmail.com",
   socials: [
     {
@@ -32,26 +32,26 @@ export const about = {
 
 export const projects = [
   {
-    title: "Frontier Commons Insight Lane Fellowship",
+    title: "Faith First-Aid Kit",
     description:
-      "Applied research and project development connecting emerging ideas and technologies to real-world crisis and resilience challenges.",
-    tags: ["Applied Research", "Project Development"],
+      "Prototyped a mobile app using a dual-axis framework (6 re-entry scenarios × 8 core emotions) to deliver instant, situational, psycho-spiritual support cards for returnees navigating reverse culture shock.",
+    tags: ["Research", "Product Design", "Faith & Resilience"],
     href: "#",
     accent: "baby-blue",
   },
   {
-    title: "Crisis Communication & AI",
+    title: "Cimol Bledos Franchise Model",
     description:
-      "Ongoing exploration of how AI and technology can support crisis communication and help communities navigate uncertainty.",
-    tags: ["Crisis Communication", "AI"],
+      "Investigated local F&B market dynamics to establish the first mobile 'Cimol Bledos' franchise in Jakarta, structuring vendor agreements and cost-control protocols that held ~75% of projected revenue through macroeconomic instability.",
+    tags: ["Business Strategy", "Operations"],
     href: "#",
     accent: "baby-purple",
   },
   {
-    title: "Faith & Resilience",
+    title: "Community Mental Health Advocacy",
     description:
-      "Work at the intersection of faith and practical resilience — examining how communities draw on faith to navigate change and hardship.",
-    tags: ["Faith", "Resilience", "Community"],
+      "Developed psychoeducational materials and mental health advocacy campaigns to increase digital accessibility of psychological resources, and evaluated community wellbeing program outcomes with peer support advocates.",
+    tags: ["Mental Health", "Community"],
     href: "#",
     accent: "baby-pink",
   },
@@ -59,29 +59,100 @@ export const projects = [
 
 export const experience = [
   {
-    role: "Fellow, Applied Research & Project Development",
-    org: "Frontier Commons Insight Lane Fellowship",
-    period: "",
+    role: "Research Insight Intern",
+    org: "Frontier Commons",
+    period: "July 2026 — Present · Ohio, United States",
     description:
-      "Applied research and project development connecting emerging ideas and technologies to real-world challenges, with a focus on crisis communication, AI, faith, and resilience.",
+      "Investigate psycho-social re-entry dynamics, reverse culture shock, and identity reintegration among Christian international student returnees, analyzing 40 distinct feeling-scenario matrices. Designed and prototyped the \"Faith First-Aid Kit\" mobile app.",
   },
   {
-    role: "MSc, Emergency Management & Resilience",
-    org: "Coventry University",
-    period: "",
+    role: "Business Consultant",
+    org: "PT Anekarasa Sukses Abadi",
+    period: "January 2026 — Present · Jakarta, Indonesia",
     description:
-      "Academic background in psychology and emergency management.",
+      "Investigated local F&B market dynamics to establish the first mobile \"Cimol Bledos\" franchise model in Jakarta. Structured vendor agreements and cost-control protocols that maintained ~75% of projected revenue during macroeconomic instability.",
+  },
+  {
+    role: "Lifestyle Coach",
+    org: "YMCA Muskegon",
+    period: "July 2023 — Present · Michigan, United States",
+    description:
+      "Facilitate group health and wellness coaching programs and guide individual participants in establishing personalized lifestyle goals, using routine follow-ups and data tracking for long-term behavioral maintenance.",
+  },
+  {
+    role: "Mental Health Specialist",
+    org: "Social Connect Indonesia",
+    period: "2023 — 2024 · Jakarta, Indonesia",
+    description:
+      "Developed community-focused psychoeducational materials and mental health advocacy campaigns, and evaluated community wellbeing program outcomes with cross-functional mental health advocates.",
+  },
+  {
+    role: "Nurse Technician",
+    org: "Helen DeVos Children's Hospital",
+    period: "December 2022 — April 2023 · Michigan, United States",
+    description:
+      "Delivered clinical nursing support under RN supervision across the Pediatric Emergency Department, NICU, Oncology, and COVID-19 wards, managing vital sign assessments and patient charting in high-acuity environments.",
+  },
+  {
+    role: "Director of Campus Ministry",
+    org: "Fellowship of Indonesian Christians in America",
+    period: "2021 — 2022 · United States",
+    description:
+      "Directed campus outreach and community integration programs for Indonesian international student cohorts across North America, mentoring student leaders on pastoral care and cross-cultural transition counseling.",
+  },
+] as const;
+
+export const leadership = [
+  {
+    role: "Head of Logistics",
+    org: "Indonesian Scholars International Convention (ISIC) UK",
+    period: "2025 · United Kingdom",
+    description:
+      "Coordinated international conference logistics, managing multi-stakeholder liaison and venue operations for scholarly networking and academic research dissemination.",
+  },
+  {
+    role: "Head of Operations",
+    org: "Indonesian Society UK Olympic Event",
+    period: "2025 · United Kingdom",
+    description:
+      "Directed event operations for a large-scale Indonesian student community across athletic and cultural events.",
+  },
+] as const;
+
+export const education = [
+  {
+    degree: "MSc, Emergency Management & Resilience",
+    school: "Coventry University",
+    period: "2025 — 2026 · United Kingdom",
+  },
+  {
+    degree: "BSc, Psychology",
+    school: "Calvin University",
+    period: "2019 — 2022 · United States",
+  },
+] as const;
+
+export const certifications = [
+  {
+    name: "Level 7 Certificate in Strategic Management and Leadership",
+    org: "Chartered Management Institute (UK)",
+    year: "2026",
+  },
+  {
+    name: "McKinsey Forward Certificate",
+    org: "McKinsey & Company",
+    year: "2026",
   },
 ] as const;
 
 export const skills = [
-  "Crisis Communication",
-  "Emergency Management",
+  "Crisis & Emergency Management",
   "Applied Research",
-  "Community Leadership",
   "Mental Health Support",
   "Lifestyle Coaching",
-  "Education",
-  "Ministry",
-  "Logistics & Operations",
+  "Clinical & Patient Care",
+  "Community Leadership",
+  "Ministry & Pastoral Care",
+  "Business Strategy & Operations",
+  "Logistics & Event Management",
 ];
