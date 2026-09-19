@@ -61,7 +61,7 @@ export const projects: Project[] = [
   {
     title: "Publications",
     description:
-      "Essays, campaign content, and event materials on faith, mental health, and justice, created for Buletin Pillar, CRCNA's Do Justice series, FICA Campus Ministry, Calvin University's Psychology Club, and Hope Special Needs Center.",
+      "Essays, campaign content, and event materials on faith, mental health, and justice.",
     tags: ["Publication", "Writing"],
     slug: "publications",
     accent: "baby-purple",
