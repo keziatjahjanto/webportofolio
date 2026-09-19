@@ -66,6 +66,13 @@ export const experience = [
       "Investigate psycho-social re-entry dynamics, reverse culture shock, and identity reintegration among Christian international student returnees, analyzing 40 distinct feeling-scenario matrices. Designed and prototyped the \"Faith First-Aid Kit\" mobile app.",
   },
   {
+    role: "Founder and Tutor",
+    org: "Voice Beyond",
+    period: "July 2026 — Present",
+    description:
+      "Founded and manage an independent online English and IELTS tutoring business, overseeing curriculum development, pricing strategy, and student learning pathways. Lead branding, marketing, and client relationship management to support business growth.",
+  },
+  {
     role: "Business Consultant",
     org: "PT Anekarasa Sukses Abadi",
     period: "January 2026 — Present · Jakarta, Indonesia",
@@ -94,11 +101,11 @@ export const experience = [
       "Delivered clinical nursing support under RN supervision across the Pediatric Emergency Department, NICU, Oncology, and COVID-19 wards, managing vital sign assessments and patient charting in high-acuity environments.",
   },
   {
-    role: "Director of Campus Ministry",
-    org: "Fellowship of Indonesian Christians in America",
-    period: "2021 — 2022 · United States",
+    role: "Pastoral Intern",
+    org: "Pine Rest Christian Mental Health Services",
+    period: "June 2021 — August 2021",
     description:
-      "Directed campus outreach and community integration programs for Indonesian international student cohorts across North America, mentoring student leaders on pastoral care and cross-cultural transition counseling.",
+      "Provided emotional and spiritual support to patients and hospital staff. Shadowed chaplains across hospital units, led prayers and wellness groups for the Child and Adolescent unit, developed lesson plans, and provided one-on-one patient support.",
   },
 ] as const;
 
@@ -116,6 +123,13 @@ export const leadership = [
     period: "2025 · United Kingdom",
     description:
       "Directed event operations for a large-scale Indonesian student community across athletic and cultural events.",
+  },
+  {
+    role: "Director of Campus Ministry",
+    org: "Fellowship of Indonesian Christians in America",
+    period: "2021 — 2022 · United States",
+    description:
+      "Directed campus outreach and community integration programs for Indonesian international student cohorts across North America, mentoring student leaders on pastoral care and cross-cultural transition counseling.",
   },
 ] as const;
 
