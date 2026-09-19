@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Freight Display Pro";
+  src:
+    url("/fonts/FreightDisplayPro-Book.woff2") format("woff2"),
+    url("/fonts/FreightDisplayPro-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Freight Display Pro";
+  src:
+    url("/fonts/FreightDisplayPro-Bold.woff2") format("woff2"),
+    url("/fonts/FreightDisplayPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #fdf9fb;
+  --foreground: #2b2733;
+
+  --color-baby-blue: #bfe3f0;
+  --color-baby-blue-deep: #9bd1e6;
+  --color-baby-purple: #ddd2f2;
+  --color-baby-purple-deep: #c3aee8;
+  --color-baby-pink: #f6d6e4;
+  --color-baby-pink-deep: #edb9d1;
+  --color-ink: #2b2733;
+  --color-ink-soft: #565064;
+  --color-cream: #fdf9fb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-baby-blue: var(--color-baby-blue);
+  --color-baby-blue-deep: var(--color-baby-blue-deep);
+  --color-baby-purple: var(--color-baby-purple);
+  --color-baby-purple-deep: var(--color-baby-purple-deep);
+  --color-baby-pink: var(--color-baby-pink);
+  --color-baby-pink-deep: var(--color-baby-pink-deep);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-cream: var(--color-cream);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: "Freight Display Pro", var(--font-playfair), Georgia, serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.marble-surface {
+  background-color: var(--color-cream);
+  background-image:
+    radial-gradient(at 15% 20%, var(--color-baby-blue) 0%, transparent 45%),
+    radial-gradient(at 85% 15%, var(--color-baby-pink) 0%, transparent 45%),
+    radial-gradient(at 50% 85%, var(--color-baby-purple) 0%, transparent 50%),
+    repeating-linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.55) 0px,
+      rgba(255, 255, 255, 0.55) 1px,
+      transparent 1px,
+      transparent 70px
+    ),
+    repeating-linear-gradient(
+      25deg,
+      rgba(43, 39, 51, 0.05) 0px,
+      rgba(43, 39, 51, 0.05) 1px,
+      transparent 1px,
+      transparent 90px
+    );
+  background-blend-mode: normal, normal, normal, overlay, overlay;
+}
+
+.marble-card {
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(at 10% 10%, var(--color-baby-blue) 0%, transparent 55%),
+    radial-gradient(at 90% 90%, var(--color-baby-pink) 0%, transparent 55%),
+    repeating-linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0.7) 0px,
+      rgba(255, 255, 255, 0.7) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+  background-blend-mode: normal, normal, overlay;
+}
