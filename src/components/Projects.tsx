@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { projects } from "@/data/site";
 
 const ACCENT_CLASSES: Record<string, string> = {
@@ -18,9 +19,9 @@ export default function Projects() {
         </p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <a
+            <Link
               key={project.title}
-              href={project.href}
+              href={project.slug ? `/projects/${project.slug}` : (project.href ?? "#")}
               className="marble-card group flex flex-col justify-between rounded-3xl p-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
             >
               <div>
@@ -43,7 +44,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

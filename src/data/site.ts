@@ -30,7 +30,23 @@ export const about = {
   ],
 };
 
-export const projects = [
+export type ProjectGalleryItem = {
+  src: string;
+  title: string;
+  company: string;
+};
+
+export type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  accent: string;
+  href?: string;
+  slug?: string;
+  gallery?: ProjectGalleryItem[];
+};
+
+export const projects: Project[] = [
   {
     title: "Faith First-Aid Kit",
     description:
@@ -51,10 +67,39 @@ export const projects = [
     description:
       "Developed psychoeducational materials and mental health advocacy campaigns to increase digital accessibility of psychological resources, and evaluated community wellbeing program outcomes with peer support advocates.",
     tags: ["Mental Health", "Community"],
-    href: "#",
+    slug: "community-mental-health-advocacy",
     accent: "baby-pink",
+    gallery: [
+      {
+        src: "/images/mental-health-advocacy/course-5-0-mental-health-youth-academy.png",
+        title:
+          "Course 5.0, Mental Health Youth Academy — How to Achieve Work-Life Balance & Prioritize Mental Health in the Workplace",
+        company: "Social Connect",
+      },
+      {
+        src: "/images/mental-health-advocacy/real-talk-returning-home.png",
+        title: "Real Talk: Returning Home Ep. 1 — Re-Experiencing Indonesia",
+        company: "Fellowship of Indonesian Christians in America (FICA)",
+      },
+      {
+        src: "/images/mental-health-advocacy/ig-live-3-0-accessibility.png",
+        title:
+          "IG Live 3.0 — Aksesibilitas Layanan Kesehatan Mental dalam Primary Healthcare di Indonesia",
+        company: "Social Connect",
+      },
+      {
+        src: "/images/mental-health-advocacy/love-and-heal-your-innerchild.png",
+        title: "Instagram Live — Love and Heal Your Innerchild",
+        company: "Social Connect",
+      },
+      {
+        src: "/images/mental-health-advocacy/bincang-soco-ok-google.jpg",
+        title: '#BincangSoco Instagram Live — "OK Google, Apakah Aku Baik-Baik Saja?"',
+        company: "Social Connect",
+      },
+    ],
   },
-] as const;
+];
 
 export const experience = [
   {
