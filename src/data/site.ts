@@ -21,13 +21,6 @@ export const about = {
     "My faith is an important part of how I understand service, community, and the way I approach the work I do. I'm continuing to learn, experiment, and build at the intersection of these fields, especially where faith and practical approaches to resilience can work together.",
     "I enjoy working on projects that bring together different perspectives and turn complex problems into something people can actually use. I'm always open to learning from others, collaborating on new ideas, and connecting with people working on meaningful problems.",
   ],
-  focusAreas: [
-    "Crisis Communication",
-    "Emergency Management",
-    "Resilience",
-    "AI & Technology",
-    "Faith & Community",
-  ],
 };
 
 export type ProjectGalleryItem = {
