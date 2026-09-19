@@ -1,6 +1,6 @@
 export const profile = {
   name: "Kezia Tjahjanto",
-  title: "Crisis Resilience Researcher & Community Builder",
+  title: "Building Resilience Through Faith & Psychology",
   tagline:
     "Exploring the intersection of crisis management, resilience, psychology, faith, technology, and community — turning emerging ideas into human-centered solutions.",
   location: "Jakarta, Indonesia",
