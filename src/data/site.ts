@@ -23,6 +23,35 @@ export const about = {
   ],
 };
 
+export const logos = [
+  { src: "/images/logos/frontier-commons.png", alt: "Frontier Commons" },
+  { src: "/images/logos/voice-beyond.png", alt: "Voice Beyond" },
+  {
+    src: "/images/logos/pt-anekarasa-sukses-abadi.png",
+    alt: "PT Anekarasa Sukses Abadi",
+  },
+  { src: "/images/logos/ymca.png", alt: "YMCA Muskegon" },
+  {
+    src: "/images/logos/helen-devos-childrens-hospital.png",
+    alt: "Helen DeVos Children's Hospital",
+  },
+  {
+    src: "/images/logos/pine-rest.png",
+    alt: "Pine Rest Christian Mental Health Services",
+  },
+  { src: "/images/logos/ppi-uk.png", alt: "PPI UK" },
+  {
+    src: "/images/logos/fica.jpg",
+    alt: "Fellowship of Indonesian Christians in America",
+  },
+  { src: "/images/logos/social-connect.png", alt: "Social Connect Indonesia" },
+  {
+    src: "/images/logos/hope-special-needs-center.png",
+    alt: "Hope Special Needs Center",
+  },
+  { src: "/images/logos/calvin-university.png", alt: "Calvin University" },
+];
+
 export type ProjectGalleryItem = {
   src: string;
   title: string;
@@ -48,8 +77,86 @@ export const projects: Project[] = [
     description:
       "Prototyped a mobile app using a dual-axis framework (6 re-entry scenarios × 8 core emotions) to deliver instant, situational, psycho-spiritual support cards for returnees navigating reverse culture shock.",
     tags: ["Research", "Product Design", "Faith & Resilience"],
-    href: "#",
+    slug: "faith-first-aid-kit",
     accent: "baby-blue",
+    gallery: [
+      {
+        src: "/images/faith-first-aid-kit/01-cover.png",
+        title: "Faith First-Aid Kit — App Walkthrough",
+        company: "A three-minute check-in, beginning to end.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/02-sign-in.png",
+        title: "Step 1: Sign In",
+        company:
+          "Tap \"I'm a returnee.\" The account is remembered until an explicit logout, so this screen is only seen once.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/03-open-your-kit.png",
+        title: "Step 2: Open Your Kit",
+        company:
+          "Home opens on a time-aware prompt with six situations. Tapping one starts the check-in with that answer already given.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/04-tell-me-what-happened.png",
+        title: "Step 3: Tell Me What Happened",
+        company:
+          "Four questions — what, where, when, why. Only what is required; each row appears as the one before it is answered or skipped.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/05-which-one-is-closest.png",
+        title: "Step 4: Which One Is Closest",
+        company: "Four core emotions: fear, anger, sad, happy.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/06-name-it-precisely.png",
+        title: "Step 5: Name It Precisely",
+        company:
+          "Five sub-emotions under the core, twenty in all. There is no wrong pick — every feeling has a card.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/07-someone-who-knows.png",
+        title: "Step 6: Someone Who Knows",
+        company:
+          "Someone in Scripture who sat in the same feeling, telling their own story. One part unlocks per day you return to that emotion.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/08-your-card.png",
+        title: "Step 7: Your Card",
+        company:
+          "The card arrives face down, its front a photograph matching the exact sub-emotion. Tap to turn it over.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/09-verse-and-journal.png",
+        title: "Step 8: The Verse, and the Journal",
+        company:
+          "The back carries a scripture and one honest question. Write underneath, or skip it, then save and pin to My Day.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/10-pinned-to-your-day.png",
+        title: "Step 9: Pinned to Your Day",
+        company:
+          "The card sits on Home for the rest of the day. Each check-in day counts toward the weekly goal; the tree grows a stage when it's met.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/11-your-journal.png",
+        title: "Step 10: Your Journal",
+        company:
+          "One thread per situation with a real note, plus a single free-entry book for writing not tied to a card.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/12-analyze.png",
+        title: "Step 11: Analyze",
+        company:
+          "A week or month of what you felt, which situations kept bringing it, and a searchable log of past cards.",
+      },
+      {
+        src: "/images/faith-first-aid-kit/13-settings.png",
+        title: "Step 12: Settings",
+        company:
+          "The daily nudge hour, the weekly goal, the resource library, and dark mode — Golden Hour, after dusk.",
+      },
+    ],
   },
   {
     title: "Publications",
