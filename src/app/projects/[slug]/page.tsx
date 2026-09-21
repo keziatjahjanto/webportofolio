@@ -9,7 +9,13 @@ export function generateStaticParams() {
     .map((project) => ({ slug: project.slug as string }));
 }
 
-function GalleryCard({ item }: { item: ProjectGalleryItem }) {
+function GalleryCard({
+  item,
+  showCaption,
+}: {
+  item: ProjectGalleryItem;
+  showCaption: boolean;
+}) {
   const content = (
     <>
       <div className="relative aspect-square w-full bg-white">
@@ -21,15 +27,17 @@ function GalleryCard({ item }: { item: ProjectGalleryItem }) {
           sizes="(min-width: 640px) 50vw, 100vw"
         />
       </div>
-      <div className="p-5">
-        <p className="font-display text-lg text-ink">{item.title}</p>
-        <p className="mt-1 text-sm text-ink-soft">{item.company}</p>
-        {(item.date || item.readTime) && (
-          <p className="mt-1 text-xs uppercase tracking-wide text-ink-soft/70">
-            {[item.date, item.readTime].filter(Boolean).join(" · ")}
-          </p>
-        )}
-      </div>
+      {showCaption && (
+        <div className="p-5">
+          <p className="font-display text-lg text-ink">{item.title}</p>
+          <p className="mt-1 text-sm text-ink-soft">{item.company}</p>
+          {(item.date || item.readTime) && (
+            <p className="mt-1 text-xs uppercase tracking-wide text-ink-soft/70">
+              {[item.date, item.readTime].filter(Boolean).join(" · ")}
+            </p>
+          )}
+        </div>
+      )}
     </>
   );
 
@@ -80,7 +88,11 @@ export default async function ProjectDetailPage({
         {project.gallery && project.gallery.length > 0 && (
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {project.gallery.map((item) => (
-              <GalleryCard key={item.src} item={item} />
+              <GalleryCard
+                key={item.src}
+                item={item}
+                showCaption={!project.hideGalleryCaptions}
+              />
             ))}
           </div>
         )}

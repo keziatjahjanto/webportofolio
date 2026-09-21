@@ -73,6 +73,7 @@ export type Project = {
   href?: string;
   slug?: string;
   gallery?: ProjectGalleryItem[];
+  hideGalleryCaptions?: boolean;
 };
 
 export const projects: Project[] = [
@@ -83,6 +84,7 @@ export const projects: Project[] = [
     tags: ["Research", "Product Design", "Faith & Resilience"],
     slug: "faith-first-aid-kit",
     accent: "baby-blue",
+    hideGalleryCaptions: true,
     gallery: [
       {
         src: "/images/faith-first-aid-kit/01-cover.png",
