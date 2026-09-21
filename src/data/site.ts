@@ -24,35 +24,73 @@ export const about = {
 };
 
 export const logos = [
-  { src: "/images/logos/frontier-commons.png", alt: "Frontier Commons" },
-  { src: "/images/logos/voice-beyond.png", alt: "Voice Beyond", scale: 1.4 },
+  {
+    src: "/images/logos/frontier-commons.png",
+    alt: "Frontier Commons",
+    description: "Nonprofit building tools for international student ministry",
+    location: "Ohio, United States",
+  },
+  {
+    src: "/images/logos/voice-beyond.png",
+    alt: "Voice Beyond",
+    scale: 1.4,
+    description: "Independent online English & IELTS tutoring business",
+    location: "Jakarta, Indonesia",
+  },
   {
     src: "/images/logos/pt-anekarasa-sukses-abadi.png",
     alt: "PT Anekarasa Sukses Abadi",
+    description: "F&B franchise business behind the Cimol Bledos brand",
+    location: "Jakarta, Indonesia",
   },
-  { src: "/images/logos/ymca.png", alt: "YMCA Muskegon" },
+  {
+    src: "/images/logos/ymca.png",
+    alt: "YMCA Muskegon",
+    description: "Community health and wellness organization",
+    location: "Michigan, United States",
+  },
   {
     src: "/images/logos/helen-devos-childrens-hospital.png",
     alt: "Helen DeVos Children's Hospital",
+    description: "Pediatric hospital, part of Corewell Health",
+    location: "Michigan, United States",
   },
   {
     src: "/images/logos/pine-rest.png",
     alt: "Pine Rest Christian Mental Health Services",
+    description: "Christian mental health and counseling services",
+    location: "Michigan, United States",
   },
-  { src: "/images/logos/ppi-uk.png", alt: "PPI UK" },
+  {
+    src: "/images/logos/ppi-uk.png",
+    alt: "PPI UK",
+    description: "Indonesian Students Association in the UK",
+    location: "United Kingdom",
+  },
   {
     src: "/images/logos/fica.jpg",
     alt: "Fellowship of Indonesian Christians in America",
+    description: "Campus ministry for Indonesian international students",
+    location: "United States",
   },
-  { src: "/images/logos/social-connect.png", alt: "Social Connect Indonesia" },
+  {
+    src: "/images/logos/social-connect.png",
+    alt: "Social Connect Indonesia",
+    description: "Mental health advocacy and education platform",
+    location: "Jakarta, Indonesia",
+  },
   {
     src: "/images/logos/hope-special-needs-center.png",
     alt: "Hope Special Needs Center",
+    description: "Special needs education and therapy center",
+    location: "Jakarta, Indonesia",
   },
   {
     src: "/images/logos/calvin-university.png",
     alt: "Calvin University",
     scale: 1.4,
+    description: "Christian liberal arts university",
+    location: "Michigan, United States",
   },
 ];
 
