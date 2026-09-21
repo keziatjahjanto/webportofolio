@@ -25,7 +25,7 @@ export const about = {
 
 export const logos = [
   { src: "/images/logos/frontier-commons.png", alt: "Frontier Commons" },
-  { src: "/images/logos/voice-beyond.png", alt: "Voice Beyond" },
+  { src: "/images/logos/voice-beyond.png", alt: "Voice Beyond", scale: 1.4 },
   {
     src: "/images/logos/pt-anekarasa-sukses-abadi.png",
     alt: "PT Anekarasa Sukses Abadi",
@@ -49,7 +49,11 @@ export const logos = [
     src: "/images/logos/hope-special-needs-center.png",
     alt: "Hope Special Needs Center",
   },
-  { src: "/images/logos/calvin-university.png", alt: "Calvin University" },
+  {
+    src: "/images/logos/calvin-university.png",
+    alt: "Calvin University",
+    scale: 1.4,
+  },
 ];
 
 export type ProjectGalleryItem = {

@@ -14,9 +14,12 @@ export default function LogoMarquee() {
           {track.map((logo, index) => (
             <div
               key={`${logo.alt}-${index}`}
-              className="flex h-24 w-44 shrink-0 items-center justify-center rounded-2xl bg-white p-5 shadow-sm"
+              className="flex h-24 w-44 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white p-5 shadow-sm"
             >
-              <div className="relative h-full w-full">
+              <div
+                className="relative h-full w-full"
+                style={{ transform: `scale(${logo.scale ?? 1})` }}
+              >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
