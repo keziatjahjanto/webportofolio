@@ -18,7 +18,9 @@ function GalleryCard({
 }) {
   const content = (
     <>
-      <div className="relative aspect-square w-full bg-white">
+      <div
+        className={`relative w-full ${showCaption ? "aspect-square bg-white" : "aspect-[1754/1002]"}`}
+      >
         <Image
           src={item.src}
           alt={item.title}
@@ -41,8 +43,9 @@ function GalleryCard({
     </>
   );
 
-  const className =
-    "block overflow-hidden rounded-3xl bg-white/70 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md";
+  const className = showCaption
+    ? "block overflow-hidden rounded-3xl bg-white/70 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
+    : "block overflow-hidden rounded-2xl transition-transform hover:-translate-y-1";
 
   if (item.href) {
     return (
