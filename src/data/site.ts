@@ -304,13 +304,6 @@ export const experience = [
       "Co-lead a cross-border returnee study across the U.S. and Indonesia, conducting structured stakeholder interviews on psychosocial and transition dynamics. Provide mental health expertise to fall hackathon cohorts, edit and standardize research primer volumes, and manage cohort Plug Ins and weekly progress reporting to leadership.",
   },
   {
-    role: "Summer Research Insight Intern",
-    org: "Frontier Commons",
-    period: "July 2026 — September 2026 · Ohio, United States",
-    description:
-      "Investigate psycho-social re-entry dynamics, reverse culture shock, and identity reintegration among Christian international student returnees, analyzing 40 distinct feeling-scenario matrices. Designed and prototyped the \"Faith First-Aid Kit\" mobile app.",
-  },
-  {
     role: "Founder and Tutor",
     org: "Voice Beyond",
     period: "July 2026 — Present · Jakarta, Indonesia",
@@ -330,6 +323,13 @@ export const experience = [
     period: "July 2023 — Present · Michigan, United States",
     description:
       "Facilitate group health and wellness coaching programs and guide individual participants in establishing personalized lifestyle goals, using routine follow-ups and data tracking for long-term behavioral maintenance.",
+  },
+  {
+    role: "Summer Research Insight Intern",
+    org: "Frontier Commons",
+    period: "July 2026 — September 2026 · Ohio, United States",
+    description:
+      "Investigate psycho-social re-entry dynamics, reverse culture shock, and identity reintegration among Christian international student returnees, analyzing 40 distinct feeling-scenario matrices. Designed and prototyped the \"Faith First-Aid Kit\" mobile app.",
   },
   {
     role: "Nurse Technician",
