@@ -4,8 +4,10 @@ type TimelineItem = {
   role: string;
   org: string;
   period: string;
-  description: string;
-};
+} & (
+  | { description: string }
+  | { highlights: readonly { label: string; text: string }[] }
+);
 
 export function Timeline({ items }: { items: readonly TimelineItem[] }) {
   return (
@@ -21,9 +23,21 @@ export function Timeline({ items }: { items: readonly TimelineItem[] }) {
           <h3 className="mt-1 font-display text-lg text-ink">
             {item.role} · {item.org}
           </h3>
-          <p className="mt-1 max-w-2xl text-sm text-ink-soft">
-            {item.description}
-          </p>
+          {"description" in item && (
+            <p className="mt-1 max-w-2xl text-sm text-ink-soft">
+              {item.description}
+            </p>
+          )}
+          {"highlights" in item && (
+            <ul className="mt-2 max-w-2xl list-disc space-y-1.5 pl-5 text-sm text-ink-soft marker:text-baby-purple-deep">
+              {item.highlights.map((h) => (
+                <li key={h.label}>
+                  <span className="font-medium text-ink">{h.label}:</span>{" "}
+                  {h.text}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       ))}
     </div>

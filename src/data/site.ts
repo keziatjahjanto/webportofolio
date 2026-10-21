@@ -297,9 +297,36 @@ export const projects: Project[] = [
 
 export const experience = [
   {
-    role: "Research Insight Intern",
+    role: "Research Analyst",
     org: "Frontier Commons",
-    period: "July 2026 — Present · Ohio, United States",
+    period: "September 2026 — Present · Ohio, United States (Remote)",
+    highlights: [
+      {
+        label: "Cross-Border Research",
+        text: "Co-led returnee study across U.S. and Indonesia, conducting structured stakeholder interviews on psychosocial and transition dynamics.",
+      },
+      {
+        label: "Digital Health & Product Design",
+        text: 'Directed iterative development of the "Faith First-Aid Kit" mobile support tool (6 scenarios × 8 core emotions).',
+      },
+      {
+        label: "Mental Health & Hackathon Support",
+        text: "Provided mental health domain expertise to fall hackathon cohorts, evaluating post-hackathon prototypes for wellness integration.",
+      },
+      {
+        label: "Editorial & Publications",
+        text: "Reviewed, edited, and standardized research primer volumes and condensed academic publications to streamline dissemination.",
+      },
+      {
+        label: "Operations & Program Management",
+        text: "Managed administrative workflows, cohort onboarding, and weekly progress reporting to organizational leadership.",
+      },
+    ],
+  },
+  {
+    role: "Summer Research Insight Intern",
+    org: "Frontier Commons",
+    period: "July 2026 — September 2026 · Ohio, United States",
     description:
       "Investigate psycho-social re-entry dynamics, reverse culture shock, and identity reintegration among Christian international student returnees, analyzing 40 distinct feeling-scenario matrices. Designed and prototyped the \"Faith First-Aid Kit\" mobile app.",
   },
