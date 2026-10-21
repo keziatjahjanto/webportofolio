@@ -332,11 +332,39 @@ export const experience = [
       "Investigate psycho-social re-entry dynamics, reverse culture shock, and identity reintegration among Christian international student returnees, analyzing 40 distinct feeling-scenario matrices. Designed and prototyped the \"Faith First-Aid Kit\" mobile app.",
   },
   {
+    role: "Social Media Content Creator",
+    org: "Hope Special Needs Center",
+    period: "February 2023 — December 2024 · Jakarta, Indonesia (Remote)",
+    description:
+      "Summarized documents and designed posts for Hope's Instagram and Facebook to promote understanding of children with special needs. Established #SeriBelajar, a new educational social media series.",
+  },
+  {
+    role: "Study Abroad Mentor",
+    org: "Schoters",
+    period: "November 2022 — October 2023 · Jakarta, Indonesia (Remote)",
+    description:
+      "Consulted students planning to study abroad, reviewing CVs, personal statements, and essays, preparing them for university interviews, and building curricula based on their profiles. Spoke at scholarship webinars and prepared civil servants for the 2023 LPDP and Manaaki New Zealand scholarships through projects with the Ministry of Public Works and Housing and the Meteorological, Climatological, and Geophysical Agency.",
+  },
+  {
+    role: "Special Education Teacher Intern",
+    org: "Hope Special Needs Center",
+    period: "December 2022 — February 2023 · Jakarta, Indonesia",
+    description:
+      "Taught students aged 5–27 in a safe, nurturing environment that fostered social, emotional, and physical growth through intentional teaching and play, and guided them in shows and extracurricular activities. Organized a Faith and Disability event with Reformed Evangelical Church Jakarta attended by 96 people in person and online.",
+  },
+  {
     role: "Nurse Technician",
     org: "Helen DeVos Children's Hospital",
     period: "December 2021 — April 2022 · Michigan, United States",
     description:
       "Delivered clinical nursing support under RN supervision across the Pediatric Emergency Department, NICU, Oncology, and COVID-19 wards, managing vital sign assessments and patient charting in high-acuity environments.",
+  },
+  {
+    role: "Rehabilitation Technician",
+    org: "Hope Network",
+    period: "October 2021 — December 2021 · Michigan, United States",
+    description:
+      "Assisted residents with personal care, development, and daily activities, and ensured their safety in the resident house.",
   },
   {
     role: "Pastoral Intern",
